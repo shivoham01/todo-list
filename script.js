@@ -37,17 +37,23 @@ const handleDelete = (todoId) => {
 }
 
 // AllTodos
+// AllTodos
 let getAllTodos = JSON.parse(localStorage.getItem("todos"));
+if (getAllTodos.length === 0) {
+    alltodos.innerHTML = `<p>Empty Todo List...</p>`
+}
 
-for (let i = 0; i < getAllTodos.length; i++) {
-    alltodos.innerHTML += `
+else {
+    for (let i = 0; i < getAllTodos.length; i++) {
+        alltodos.innerHTML += `
                 <div class="todo">
                     <div class="title-div">
                         <h4>${getAllTodos[i].todo}</h4>
                         <button onclick ="handleDelete(${getAllTodos[i].id})" class="btn">D</button>
-                    </div>
-                </div>
-        `
+                        </div>
+                        </div>
+                        `
+    }
 }
 
 // Delete All Todos
