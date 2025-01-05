@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itodos App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 id="logo">Itodos</h1>
+        <div id="search">
+            <!-- <input type="search" name="search" id="search-input"> -->
+            <button class="btn" onclick="deleteAll()">Delete All</button>
+        </div>
+    </nav>
+    <hr>
+    <div class="create-todo">
+        <div>
+            <h1>Add todo</h1>
+            <div class="add-todo">
+                <input type="text" onchange="handleChange(this)" name="todo" id="input-todo">
+                <button class="btn" id="add-todo">Add</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="todos">
+        <div>
+            <h1>My todos</h1>
+        </div>
+        <div id="all-todos">
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

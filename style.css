@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.btn{
+    cursor: pointer;
+    padding: 2px;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+}
+
+.create-todo{
+    width: 50%;
+    margin: auto;
+    padding: 30px 0px;
+    flex-direction: row;
+}
+
+.create-todo h1{
+    margin-bottom: 10px;
+}
+
+.add-todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-todo .btn{
+    margin-left: 5px;
+}
+
+#todo{
+    margin-top: 20px;
+}
+
+.todos{
+    width: 50%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.todos h1{
+    margin-bottom: 20px;
+}
+
+.todos h1{
+    margin-bottom: 20px;
+}
+
+#all-todos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todo{
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.title-div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
